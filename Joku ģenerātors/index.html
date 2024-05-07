@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="lv">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joke Generator</title>
-    <script src="joke.js"></script>
 </head>
 <body>
-    <select id="select"></select>
-    <button onclick="newJoke()">Uzspied priekš Joka</button>
-    <div id="jokuVieta"></div>
+    <div id="container">
+        <label for="category">Select your category</label>
+        <select name="category" id="category" disabled></select>
+        
+        <button onclick="fetchJoke()">Get a new category joke!</button>
+        
+        <h3 id="title">Joke collection</h3>
+        <div class="card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Chuck_Norris%2C_The_Delta_Force_1986.jpg/330px-Chuck_Norris%2C_The_Delta_Force_1986.jpg" alt="Avatar" style="max-width: 150px;">
+        </div>
+        
+        <p id="display-joke">A Chuck Norris movie will touch your heart. Then it will rip it out of your chest!</p>
+    </div>
+    
+    <script src="joke.js" defer></script>
 </body>
 </html>

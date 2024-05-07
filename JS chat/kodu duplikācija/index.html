@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Čats</title>
+  <meta charset="utf-8">
+  <script src="{{ url_for('static', filename='chats.js') }}"></script>
+</head>
+<body onload="ieladetChatu()">
+  {% block chats %}
+  {% endblock %}
+</body>
+</html>
